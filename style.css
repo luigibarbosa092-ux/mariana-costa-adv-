@@ -477,17 +477,24 @@ button {
 .hero-photo {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   margin-top: 2rem;
 }
 
 .hero-photo img {
-  width: min(100%, 420px);
-  max-height: 520px;
+  width: min(100%, 360px);
+  max-height: 460px;
   object-fit: contain;
-  object-position: center bottom;
+  object-position: center center;
   filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.7));
-  transform: translateY(8px);
+  transform: translateY(0);
+}
+
+@media (min-width: 640px) {
+  .hero-photo img {
+    width: min(100%, 420px);
+    max-height: 520px;
+  }
 }
 
 @media (min-width: 768px) {
