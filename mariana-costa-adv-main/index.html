@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mariana Costa Advocacia - Assessoria jurídica segura e personalizada para proteger seus direitos com estratégia e confiança.">
+  <title>Mariana Costa Advocacia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <div class="logo-container">
+        <img src="assets/logo-mariana.png" alt="Mariana Costa Advocacia" class="logo-image">
+      </div>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#" class="nav-link">Início</a>
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#atuacao" class="nav-link">Atuação</a>
+        <a href="#depoimentos" class="nav-link">Depoimentos</a>
+        <a href="#contato" class="nav-link">Contato</a>
+      </div>
+
+      <button class="cta-btn nav-cta" onclick="openWhatsApp()">
+        Agendar Consulta
+      </button>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#" class="mobile-link">Início</a>
+      <a href="#sobre" class="mobile-link">Sobre</a>
+      <a href="#atuacao" class="mobile-link">Atuação</a>
+      <a href="#depoimentos" class="mobile-link">Depoimentos</a>
+      <a href="#contato" class="mobile-link">Contato</a>
+      <button class="cta-btn mobile-cta" onclick="openWhatsApp()">
+        Agendar Consulta
+      </button>
+    </div>
+  </nav>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/5521969600228?text=Olá%20Mariana%2C%20gostaria%20de%20agendar%20uma%20consultoria" 
+     target="_blank" 
+      rel="noopener"
+     class="whatsapp-float" 
+     aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-bg hero-bg-office">
+      <div class="hero-overlay"></div>
+      <div class="hero-overlay-bottom"></div>
+    </div>
+
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title animate-fade-in">
+          Mariana Costa Advocacia
+        </h1>
+        <div class="hero-line"></div>
+        <p class="hero-subtitle animate-fade-in">
+          Atendimento jurídico especializado para proteger seus direitos com estratégia e confiança.
+        </p>
+        <p class="hero-subtitle-secondary animate-fade-in">
+          Consultoria e Assessoria Jurídica.
+        </p>
+        <div class="hero-buttons animate-fade-in">
+          <button class="btn btn-primary" onclick="openWhatsApp()">Agendar Consulta</button>
+          <button class="btn btn-secondary" onclick="scrollToSection('sobre')">Saiba Mais</button>
+        </div>
+      </div>
+
+      <div class="hero-photo">
+        <img src="assets/mariana-photo.png" alt="Mariana Costa - Advogada Premium">
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <p>EXPLORAR</p>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- SOBRE SECTION -->
+  <section id="sobre" class="section section-dark">
+    <div class="decorative-blur top-left"></div>
+    <div class="decorative-blur bottom-right"></div>
+    
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Sobre Mariana Costa</h2>
+        <div class="section-line"></div>
+      </div>
+      <p class="section-text">
+        Com 7 anos de experiência na área jurídica, a Dra. Mariana Costa atua nas áreas de Direito de Família, Direito Civil, Direito do Consumidor e Lei Maria da Penha, sempre comprometida com a defesa dos direitos de seus clientes.
+
+        Seu trabalho é pautado pela ética, clareza e atendimento humanizado, valorizando as particularidades de cada caso e buscando soluções jurídicas eficazes e personalizadas.
+      </p>
+    </div>
+  </section>
+
+  <!-- ÁREAS DE ATUAÇÃO -->
+  <section id="atuacao" class="section section-dark-alt">
+    <div class="decorative-blur top-right"></div>
+    <div class="decorative-blur bottom-left"></div>
+    
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Áreas de Atuação</h2>
+        <div class="section-line"></div>
+        <p class="section-subtitle">Expertise em múltiplas áreas do direito para atender suas necessidades</p>
+      </div>
+
+      <div class="practice-grid">
+        <div class="practice-card">
+          <h3 class="practice-title">Direito Civil</h3>
+          <div class="practice-line"></div>
+          <p class="practice-desc">Consultoria especializada em contratos, responsabilidade civil e direitos do consumidor.</p>
+        </div>
+
+        <div class="practice-card">
+          <h3 class="practice-title">Consultoria Jurídica</h3>
+          <div class="practice-line"></div>
+          <p class="practice-desc">Orientação estratégica personalizada para questões jurídicas complexas.</p>
+        </div>
+
+        <div class="practice-card">
+          <h3 class="practice-title">Lei Maria da Penha</h3>
+          <div class="practice-line"></div>
+          <p class="practice-desc">Acompanhamento em delegacias, requerimento e acompanhamento de medidas protetivas.</p>
+        </div>
+
+        <div class="practice-card">
+          <h3 class="practice-title">Direito de Família</h3>
+          <div class="practice-line"></div>
+          <p class="practice-desc">Divórcio, guarda de menores, pensão alimentícia e direitos sucessórios.</p>
+        </div>
+
+        <div class="practice-card">
+          <h3 class="practice-title">Direito Empresarial</h3>
+          <div class="practice-line"></div>
+          <p class="practice-desc">Assessoria para constituição, fusão e operações de empresas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS CAROUSEL -->
+  <section id="depoimentos" class="testimonials-carousel-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">O que nossos clientes dizem</h2>
+        <div class="section-line"></div>
+        <p class="section-subtitle">Histórias reais de clientes que confiaram em nosso trabalho jurídico e receberam atendimento humanizado, transparente e eficiente.</p>
+      </div>
+    </div>
+
+    <div class="carousel-container">
+      <div class="carousel-track" id="carouselTrack">
+        <!-- Depoimentos (Serão duplicados via JS para o loop infinito) -->
+        <div class="testimonial-card-premium">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"Fui atendida com muita atenção e profissionalismo. A Dra. Mariana conduziu todo o processo com clareza e segurança. Recomendo fortemente."</p>
+          <div class="testimonial-author-premium">
+            <div class="author-info-premium">
+              <span class="author-name-premium"><span class="author-dash">—</span> Ana Paula S.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card-premium">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"Excelente atendimento. Sempre disponível para esclarecer dúvidas e buscar a melhor solução para o meu caso."</p>
+          <div class="testimonial-author-premium">
+            <div class="author-info-premium">
+              <span class="author-name-premium"><span class="author-dash">—</span> Carlos Henrique M.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card-premium">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"Profissional extremamente competente e humana. Me senti acolhida durante todo o processo."</p>
+          <div class="testimonial-author-premium">
+            <div class="author-info-premium">
+              <span class="author-name-premium"><span class="author-dash">—</span> Juliana R.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card-premium">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"Atendimento rápido, transparente e eficiente. Superou minhas expectativas."</p>
+          <div class="testimonial-author-premium">
+            <div class="author-info-premium">
+              <span class="author-name-premium"><span class="author-dash">—</span> Rafael A.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card-premium">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"A Dra. Mariana demonstrou grande conhecimento jurídico e compromisso com o meu caso."</p>
+          <div class="testimonial-author-premium">
+            <div class="author-info-premium">
+              <span class="author-name-premium"><span class="author-dash">—</span> Fernanda L.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card-premium">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"Recebi orientação clara desde o primeiro contato. Excelente experiência."</p>
+          <div class="testimonial-author-premium">
+            <div class="author-info-premium">
+              <span class="author-name-premium"><span class="author-dash">—</span> Marcelo P.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- URGÊNCIA SECTION -->
+  <section class="section section-urgency">
+    <div class="urgency-line-top"></div>
+    <div class="decorative-blur top-right"></div>
+    <div class="decorative-blur bottom-left"></div>
+    
+    <div class="container">
+      <div class="urgency-content">
+        <h2 class="urgency-title">Decisões Adiadas Amplificam Riscos</h2>
+        <div class="section-line center"></div>
+        <p class="urgency-text">
+          Questões jurídicas não resolvidas tendem a se agravar. Cada dia de inação pode significar perdas financeiras maiores, dificuldades processuais mais complexas e prejuízos irreversíveis. A proteção dos seus direitos começa com uma decisão estratégica, tomada no momento certo.
+        </p>
+        <button class="btn btn-gold" onclick="openWhatsApp()">Falar com Especialista</button>
+        <p class="urgency-sub">Atendimento humanizado, estratégico e sigiloso</p>
+      </div>
+    </div>
+    <div class="urgency-line-bottom"></div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section section-cta">
+    <div class="decorative-blur-blue top-left"></div>
+    <div class="decorative-blur bottom-right"></div>
+    
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Proteja seus direitos com segurança e estratégia</h2>
+        <div class="section-line center"></div>
+        <p class="cta-text">Agende uma consultoria com Mariana Costa e descubra como podemos ajudar você.</p>
+        <div class="cta-buttons">
+          <button class="btn btn-primary large" onclick="openWhatsApp()">Agendar Consulta</button>
+          <button class="btn btn-secondary large" onclick="openWhatsApp()">Falar no WhatsApp</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contato" class="footer">
+    <div class="footer-line-top"></div>
+    
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3 class="footer-logo">Mariana Costa</h3>
+          <div class="footer-brand-line"></div>
+          <p class="footer-tagline">Advocacia Premium | Estratégia Jurídica</p>
+        </div>
+
+        <div class="footer-contact">
+          <h4 class="footer-title">Contato</h4>
+          <div class="footer-title-line"></div>
+          <div class="footer-links">
+            <a href="mailto:contato@marianacosta.com.br">contato@marianacosta.com.br</a>
+            <a href="https://wa.me/5521969600228" target="_blank" rel="noopener">WhatsApp: +55 21 96960-0228</a>
+          </div>
+        </div>
+
+        <div class="footer-info">
+          <h4 class="footer-title">Informações</h4>
+          <div class="footer-title-line"></div>
+          <div class="footer-info-text">
+            <p>OAB/RJ nº 241.356</p>
+            <p>Rio de Janeiro-RJ</p>
+            <p>Atendimento por agendamento</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Mariana Costa Advocacia. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
