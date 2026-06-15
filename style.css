@@ -490,6 +490,25 @@ button {
   transform: translateY(0);
 }
 
+@media (max-width: 639px) {
+  .hero-content {
+    padding-bottom: 1.5rem;
+  }
+
+  .hero-photo {
+    align-items: center;
+    margin-top: 1.75rem;
+    overflow: visible;
+  }
+
+  .hero-photo img {
+    width: min(100%, 320px);
+    max-height: calc(100vh - 240px);
+    object-position: center 58%;
+    transform: translateY(4px);
+  }
+}
+
 @media (min-width: 640px) {
   .hero-photo img {
     width: min(100%, 420px);
