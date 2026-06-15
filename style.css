@@ -758,7 +758,7 @@ button {
 
 .section-title {
   font-size: 2.5rem;
-  color: var(--white);
+  color: var(--section-line);
   letter-spacing: -0.02em;
   margin-bottom: 1rem;
 }
@@ -772,7 +772,7 @@ button {
 .section-line {
   height: 4px;
   width: 8rem;
-  background: linear-gradient(to right, var(--gold), var(--gold-light), transparent);
+  background: linear-gradient(to right, var(--section-line), var(--section-line), transparent);
   margin: 0 auto 1.5rem;
 }
 
@@ -782,7 +782,7 @@ button {
 
 .section-subtitle {
   font-size: 1.125rem;
-  color: var(--slate-300);
+  color: var(--text-secondary);
   letter-spacing: 0.02em;
 }
 
@@ -790,7 +790,7 @@ button {
   max-width: 56rem;
   margin: 0 auto;
   text-align: center;
-  color: var(--slate-300);
+  color: var(--text-primary);
   font-size: 1.125rem;
   line-height: 1.8;
   letter-spacing: 0.02em;
@@ -870,7 +870,7 @@ button {
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(to right, transparent, rgba(212, 175, 55, 0.5), transparent);
+  background: linear-gradient(to right, transparent, rgba(184, 154, 93, 0.35), transparent);
 }
 
 .urgency-line-top {
@@ -889,7 +889,7 @@ button {
 
 .urgency-title {
   font-size: 2rem;
-  color: var(--white);
+  color: var(--section-line);
   letter-spacing: -0.02em;
   line-height: 1.2;
   margin-bottom: 1rem;
@@ -903,7 +903,7 @@ button {
 
 .urgency-text {
   font-size: 1.125rem;
-  color: var(--slate-300);
+  color: var(--text-primary);
   line-height: 1.8;
   letter-spacing: 0.02em;
   font-weight: 300;
@@ -919,7 +919,7 @@ button {
 .urgency-sub {
   margin-top: 1rem;
   font-size: 0.875rem;
-  color: var(--slate-400);
+  color: var(--text-secondary);
   letter-spacing: 0.1em;
   font-weight: 300;
   font-style: italic;
@@ -1008,7 +1008,7 @@ button {
 
 .cta-title {
   font-size: 2.5rem;
-  color: var(--white);
+  color: var(--section-line);
   letter-spacing: -0.02em;
   margin-bottom: 1rem;
 }
@@ -1021,7 +1021,7 @@ button {
 
 .cta-text {
   font-size: 1.25rem;
-  color: var(--slate-300);
+  color: var(--text-primary);
   letter-spacing: 0.02em;
   margin-bottom: 2rem;
 }
