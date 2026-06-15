@@ -1286,4 +1286,43 @@ button {
   .carousel-track {
     animation-duration: 30s;
   }
+
+  /* ===== CORREÇÃO DE LEGIBILIDADE ===== */
+
+:root {
+  --text-primary: #5F524A;
+  --text-secondary: #766A63;
+}
+
+.section-text,
+.section-subtitle,
+.practice-desc,
+.testimonial-quote,
+.urgency-text,
+.cta-text,
+.footer-tagline,
+.footer-links a,
+.footer-info-text,
+.urgency-sub,
+.footer-bottom {
+  color: var(--text-primary) !important;
+}
+
+.section-title,
+.practice-title,
+.urgency-title,
+.cta-title,
+.footer-title,
+.testimonial-stars,
+.author-dash {
+  color: #B89A5D !important;
+}
+
+.btn-primary {
+  color: #FFFFFF !important;
+}
+
+.btn-primary:hover {
+  color: #FFFFFF !important;
+}
 }
