@@ -1391,3 +1391,19 @@ button {
   color: #222222 !important;
 }
 } 
+/* ===== TEXTOS MAIS ESCUROS ===== */
+
+.section-text,
+.section-subtitle,
+.practice-desc,
+.urgency-text,
+.cta-text,
+.footer-tagline,
+.footer-links a,
+.footer-info-text,
+.urgency-sub,
+.footer-bottom,
+.testimonial-quote,
+.author-name-premium {
+  color: #222222 !important;
+}
