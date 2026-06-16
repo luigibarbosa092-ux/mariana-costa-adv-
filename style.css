@@ -1428,8 +1428,8 @@ button {
     max-width: 100% !important;
     height: auto !important;
     max-height: none !important;      /* ← remove o corte */
-    object-fit: cover !important;
-    object-position: center top !important;  /* ← prioriza o rosto */
+     object-fit: contain !important;
+object-position: center center !important; /* ← prioriza o rosto */
     transform: none !important;
     display: block !important;
     padding-bottom: 0 !important;
