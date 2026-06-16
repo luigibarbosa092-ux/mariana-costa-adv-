@@ -1452,3 +1452,8 @@ button {
     display: none !important;
   }
 }
+@media (max-width: 639px) {
+  .hero-text {
+    padding-top: 3rem !important;
+  }
+}
