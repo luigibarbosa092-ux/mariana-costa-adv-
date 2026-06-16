@@ -1406,4 +1406,45 @@ button {
 .testimonial-quote,
 .author-name-premium {
   color: #222222 !important;
+
+}
+
+/* ===== CORREÇÃO HERO MOBILE ===== */
+
+/* ===== CORREÇÃO HERO MOBILE ===== */
+
+@media (max-width: 639px) {
+
+  .hero {
+    overflow: visible !important;
+    min-height: auto !important;
+    padding-bottom: 60px !important;
+  }
+
+  .hero-content {
+    padding-bottom: 0 !important;
+  }
+
+  .hero-photo {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 20px !important;
+    margin-bottom: 30px !important;
+    overflow: visible !important;
+  }
+
+  .hero-photo img {
+    width: 90vw !important;
+    max-width: 340px !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    transform: none !important;
+  }
+
+  .scroll-indicator {
+    display: none !important;
+  }
+
 }
