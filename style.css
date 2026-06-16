@@ -1409,42 +1409,30 @@ button {
 
 }
 
-/* ===== CORREÇÃO HERO MOBILE ===== */
-
-/* ===== CORREÇÃO HERO MOBILE ===== */
-
 @media (max-width: 639px) {
-
   .hero {
-    overflow: visible !important;
     min-height: auto !important;
-    padding-bottom: 60px !important;
-  }
-
-  .hero-content {
+    height: auto !important;
     padding-bottom: 0 !important;
   }
 
   .hero-photo {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    margin-top: 20px !important;
-    margin-bottom: 30px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
     overflow: visible !important;
+    width: 100% !important;
   }
 
   .hero-photo img {
-    width: 90vw !important;
-    max-width: 340px !important;
+    width: 100% !important;
+    max-width: 100% !important;
     height: auto !important;
-    max-height: none !important;
-    object-fit: contain !important;
+    max-height: none !important;      /* ← remove o corte */
+    object-fit: cover !important;
+    object-position: center top !important;  /* ← prioriza o rosto */
     transform: none !important;
+    display: block !important;
+    padding-bottom: 0 !important;
   }
-
-  .scroll-indicator {
-    display: none !important;
-  }
-
 }
+
