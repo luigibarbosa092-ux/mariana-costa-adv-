@@ -359,7 +359,7 @@ button {
 }
 
 .hero-bg-office {
-  background-image: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663655434461/3gzPxHjCsBgrGUiwb38yZq/hero-background-office-FJavTHjSYtGgZUoUp2gpGd.webp');
+  background-image: url('assets/capa-hero-marianaadv.jpg');
 }
 
 .hero-overlay {
@@ -569,6 +569,49 @@ button {
   
   .hero-photo img {
     max-height: 92vh;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .hero-content {
+    flex-direction: column;
+    padding: 3rem 0;
+    min-height: 0;
+  }
+
+  .hero-text {
+    text-align: center;
+    flex: initial;
+  }
+
+  .hero-line {
+    margin: 0 auto 1.5rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-photo {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: auto;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-photo img {
+    width: min(100%, 480px);
+    max-height: 620px;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1199px) {
+  .hero-bg {
+    background-attachment: scroll;
   }
 }
 
@@ -1411,7 +1454,7 @@ button {
 
 @media (max-width: 639px) {
   .hero {
-    min-height: auto !important;
+    min-height: 0 !important;
     height: auto !important;
     padding-bottom: 0 !important;
     display: flex !important;
@@ -1439,10 +1482,11 @@ button {
   }
 
   .hero-photo img {
-    width: 100% !important;
+    width: auto !important;
+    max-width: 100%;
     height: auto !important;
     max-height: 70vh !important;
-    object-fit: cover !important;
+    object-fit: contain !important;
     object-position: center top !important;
     display: block !important;
     transform: none !important;
